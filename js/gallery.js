@@ -55,7 +55,7 @@ mLastFrameTime = 0;
 mCurrentIndex += 1;
 }
 
-function toggleDetails(){
+function toggleDetails()
 {
   if($(" .moreIndicator").hasClass("rot90"))
   {
@@ -69,8 +69,6 @@ function toggleDetails(){
   $( ".details" ).slideToggle( "slow", "linear" );
 }
 
-	console.log('swap photo');
-}
 
 // Counter for the mImages array
 var mCurrentIndex = 0;
