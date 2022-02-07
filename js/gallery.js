@@ -55,7 +55,7 @@ mLastFrameTime = 0;
 mCurrentIndex += 1;
 }
 
-function toggleDetails()
+function toggleDetails(){
 {
   if($(" .moreIndicator").hasClass("rot90"))
   {
