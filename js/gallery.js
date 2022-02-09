@@ -44,19 +44,14 @@ function animate() {
 function swapPhoto() {
 
 
-
 if(mCurrentIndex >= mImages.length)
 {
  mCurrentIndex = 0;
 }
 
-
-
 if(mCurrentIndex < 0) {
  mCurrentIndex = mImages.length-1;
 }
-
-
 
  document.getElementById('photo').src = mImages[mCurrentIndex].img;
  var loc = document.getElementsByClassName('location');
@@ -111,6 +106,7 @@ var mJson;
 // URL for the JSON to load by default
 // Some options for you are: images.json, images.short.json; you will need to create your own extra.json later
 var mUrl = 'images.json';
+
 function fetchJSON()
 {
  mRequest.onreadystatechange = function() {
@@ -145,14 +141,6 @@ function makeGalleryImageOnloadCallback(galleryImage) {
 		mImages.push(galleryImage);
 	}
 }
-
-
-
-
-
-
-
-
 
 $(document).ready( function() {
 
